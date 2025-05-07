@@ -14,7 +14,8 @@ html {
 html,
 body {
     height: 100%;
-    font-family: sans-serif;
+    font-family: var(--font-family);
+    font-size: 16px;
 }
 
 ul,
