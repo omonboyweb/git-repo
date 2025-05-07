@@ -1,12 +1,13 @@
 .header__top {
     background: var(--light-gray);
+    display: none;
 }
 
 .header__top-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    padding: 14px 0;
 }
 
 .header__top-link {
@@ -22,21 +23,21 @@
 .header__top-text {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--gray-strong);
 }
 
 .header__top-item {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--black);
 }
 
 .header__top-text2 {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--black);
 }
 
@@ -45,7 +46,13 @@
     gap: 24px;
 }
 
-.header__top-right a {
-    width: 25px;
-    height: 25px;
+.header__top-right a img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 922px) {
+    .header__top {
+        display: flex;
+    }
 }
