@@ -74,7 +74,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 14px 0;
+  padding: 12px 0;
 }
 
 .header__top-link {
@@ -122,6 +122,21 @@ input {
 .header__top-right a img {
   width: 20px;
   height: 20px;
+}
+
+.header__top-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  padding-top: 5px;
+}
+
+.header__top-dot {
+  background-color: var(--blue);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 922px) {

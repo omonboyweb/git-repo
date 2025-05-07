@@ -1,3 +1,5 @@
+// header top part start
+
 .header__top {
     background: var(--light-gray);
     display: none;
@@ -7,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 0;
+    padding: 12px 0;
 }
 
 .header__top-link {
@@ -50,6 +52,23 @@
     width: 20px;
     height: 20px;
 }
+
+.header__top-dots {
+    display: flex;
+    gap: 4px;
+    padding-top: 5px;
+}
+
+.header__top-dot {
+    background-color: var(--blue);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+// header top part finished
+
+// header nav ssection start //
 
 @media screen and (min-width: 922px) {
     .header__top {
