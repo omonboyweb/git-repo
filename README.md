@@ -3,7 +3,7 @@
 # Loyiha
 
 `Loyihani nomi --- 5KVT ` https://5kvt-n18.vercel.app/ Elektr asbob uskunalari bo'yicha onlayn web site
-Team Lead [@omonboyweb](https://github.com/omonboyweb)
+- Team Lead [@omonboyweb](https://github.com/omonboyweb)
 1. Pages --- Home, Catolog, Product info and Contact pages
 2. Pagelarga masullar  [@omonboyweb](https://github.com/omonboyweb)
 3. Home page --- GitHub [@omonboyweb](https://github.com/omonboyweb)
