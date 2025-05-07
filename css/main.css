@@ -142,13 +142,6 @@ input {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 922px) {
-  .header__top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 .header__nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,9 +208,10 @@ input {
 }
 
 .nav__item-search {
+  min-width: 100%;
   border: 1px solid var(--gray);
   border-radius: 3px;
-  width: 292px;
+  max-width: 292px;
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,6 +346,65 @@ input {
         -ms-flex-order: -1;
             order: -1;
     max-width: 33%;
+  }
+}
+@media screen and (min-width: 922px) {
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__nav-items [style*=order],
+  .header__nav-items [id^=order] {
+    -webkit-box-ordinal-group: initial !important;
+        -ms-flex-order: initial !important;
+            order: initial !important;
+  }
+  .nav__actions {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .nav__item-togle,
+  .nav__item-email {
+    display: none;
+  }
+  .nav__item-social {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .nav__logo-togle {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid var(--gray);
+  }
+  #order {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0;
+    border: none;
+  }
+  .nav__user-primary {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 .catalog__hero_text {
