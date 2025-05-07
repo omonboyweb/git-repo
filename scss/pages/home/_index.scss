@@ -3,6 +3,7 @@
 .header__top {
     background: var(--light-gray);
     display: none;
+    box-shadow: 0 3px 10px #acabab37;
 }
 
 .header__top-block {
@@ -72,7 +73,7 @@
 
 .header__nav-items {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 22px;
     width: 100%;
@@ -83,14 +84,38 @@
     align-items: center;
 }
 
-.header__nav-items li:nth-child(1) img {
-    width: 143px;
+.nav__item-imgs {
+    width: 106px;
     object-fit: cover;
 }
 
-.header__nav-items li:nth-child(2) {
-    font-weight: 600;
-    font-size: 25px;
+// header logog and togle
+.nav__logo-togle {
+    width: 100%;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+}
+
+.nav__item-togle {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav__item-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.nav__item-email {
+    font-weight: 400;
+    font-size: 16px;
     color: var(--black);
 }
 
@@ -101,6 +126,7 @@
     padding: 5px;
     display: flex;
     box-shadow: 0 0 17px 1px #ededed;
+    flex-grow: 1;
 }
 
 .nav__action-search {
@@ -108,9 +134,10 @@
     width: 100%;
     height: 100%;
     color: var(--black);
+    flex-grow: 1;
 }
 
-.nav__action-search::placeholder {
+.nav__action-search input::placeholder {
     color: var(--gray-strong);
 }
 
@@ -123,12 +150,12 @@
 }
 
 .nav__item-social {
-    display: flex;
+    display: none !important;
     gap: 15px;
 }
 
 .nav__actions {
-    display: flex;
+    display: none !important;
 }
 
 .nav__action {
@@ -153,4 +180,44 @@
 .nav__user-icon img {
     width: 23px;
     height: 23px;
+}
+
+.nav__user-primary {
+    display: none !important;
+}
+
+// min width view icon
+
+#order:nth-child(1) {
+    order: -1;
+}
+
+#order:nth-child(7) {
+    order: -1;
+}
+
+// media for 767 px
+
+@media screen and (min-width: 767px) {
+    .nav__actions {
+        display: flex !important;
+        order: -1;
+        max-width: 33%;
+        margin-left: auto;
+    }
+
+    .nav__item-contact {
+        max-width: 40%;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    .nav__item-social {
+        display: flex !important;
+        order: -1;
+        max-width: 33%;
+    }
 }
