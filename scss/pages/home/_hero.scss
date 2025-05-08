@@ -50,10 +50,12 @@
     font-weight: 600;
     font-size: 16px;
     text-align: center;
-    padding: 16px 70px;
+    padding: 16px 16px;
     border-radius: 3px;
     color: var(--white);
     background: var(--blue);
+    flex-grow: 1;
+    max-width: 225px;
 }
 
 .hero__action-btn {
@@ -64,6 +66,5 @@
     flex-shrink: 0;
 }
 
-@media screen and (min-width:767){
-    
+@media screen and (min-width: 767) {
 }
