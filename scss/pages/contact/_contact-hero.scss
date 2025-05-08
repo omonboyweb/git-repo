@@ -1,3 +1,33 @@
 .contact__title {
-  color: var(--blue);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black);
+    margin-top: 32px;
+}
+
+.contact__map-address {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--gray-strong);
+    margin-top: 24px;
+}
+
+.contact__map-img {
+    margin-top: 16px;
+    width: 345px;
+}
+
+@media screen and (min-width:1140px) {
+    .contact__title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 36px;
+        color: var(--black);
+        margin-top: 50px;
+    }
+    .contact__map-address {
+        display: none;
+    }
 }
