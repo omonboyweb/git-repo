@@ -537,10 +537,14 @@ input {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  padding: 16px 70px;
+  padding: 16px 16px;
   border-radius: 3px;
   color: var(--white);
   background: var(--blue);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 225px;
 }
 
 .hero__action-btn {
@@ -986,25 +990,6 @@ input {
     display: block;
   }
 }
-.hiro__model_text {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--gray-strong);
-}
-
-.hiro__text_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hiro__model {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
 .hiro__model_text {
   font-weight: 400;
   font-size: 16px;
