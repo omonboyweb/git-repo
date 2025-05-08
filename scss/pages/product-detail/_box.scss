@@ -1,0 +1,33 @@
+.box__list {
+    width: 1140;
+    padding: 30px 30px;
+    border-radius: 3px;
+    background: var(--light-gray);
+}
+
+
+.box__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box__sub_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+// .rere {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.box__top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+// .box__right {
+//     display: flex;
+//     justify-content: space-between;
+// }
