@@ -219,9 +219,9 @@ input {
   display: flex;
   -webkit-box-shadow: 0 0 17px 1px rgba(154, 154, 154, 0.3725490196);
           box-shadow: 0 0 17px 1px rgba(154, 154, 154, 0.3725490196);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .nav__action-search {
@@ -477,6 +477,85 @@ input {
     display: flex;
   }
 }
+.hero__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 32px;
+  position: relative;
+}
+
+.hero__block::before {
+  position: absolute;
+  content: "";
+  background: #eef1f8;
+  width: 100%;
+  height: calc(100% - 81px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.hero__desccription {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--gray-strong);
+}
+
+.hero__imgs img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.hero__btn {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 16px 16px;
+  border-radius: 3px;
+  color: var(--white);
+  background: var(--blue);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 225px;
+}
+
+.hero__action-btn {
+  background: var(--blue);
+  border-radius: 3px;
+  width: 51px;
+  height: 51px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .catalog__hero_text {
   margin-top: 10px;
   font-family: var(--font-family);
@@ -928,6 +1007,225 @@ input {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hiro__btn {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--white);
+  border-radius: 0 3px 3px 0;
+  background: var(--red);
+  position: absolute;
+}
+
+.teg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.details {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray-strong);
+}
+
+.detailss {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.IP {
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--black);
+}
+
+.ipp {
+  color: var(--gray-strong);
+}
+
+.hiro__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray-strong);
+}
+
+.hiro__item {
+  width: 555px;
+  background-color: var(--light-gray);
+  border-radius: 3px;
+  padding: 30px 30px 30px;
+}
+
+.ipppp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.tt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ippp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.old-price {
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--black);
+}
+
+.new-price {
+  font-weight: 500;
+  font-size: 36px;
+  text-decoration: line-through;
+  color: var(--gray);
+}
+
+.quantity-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.quantity-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.quantity-input {
+  width: 30px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+}
+
+.hiro__link {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  border-radius: 3px;
+  background: var(--blue);
+  padding: 18px 79px 18px 80px;
+}
+
+.hiro__sub_link {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+  color: var(--red);
+}
+
+.hiro__blocck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.hiro__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box__list {
+  width: 1140;
+  padding: 30px 30px;
+  border-radius: 3px;
+  background: var(--light-gray);
+}
+
+.box__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box__sub_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact__title {
