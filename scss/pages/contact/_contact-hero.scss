@@ -14,9 +14,23 @@
     margin-top: 24px;
 }
 
+.contact__map-desktop {
+    display: none;
+}
+
 .contact__map-img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 16px;
-    width: 345px;
+}
+
+.contact__map-img-desc {
+    display: none;
 }
 
 @media screen and (min-width:1140px) {
@@ -25,5 +39,27 @@
         font-size: 36px;
         color: var(--black);
         margin-top: 50px;
+    }
+    .contact__map-img {
+        background-image: url('../../../imgs/contact-map-desktop.svg');
+    }
+    .contact__map-img-desc {
+        display: flex;
+        margin-top: 30px;
+    }
+    .contact__map-img {
+        display: none;
+    }
+    .contact__map-address {
+        display: none;
+    }
+    .contact__map-desktop {
+        display: flex;
+        margin-top: 67px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        text-align: right;
+        color: var(--black);
     }
 }
